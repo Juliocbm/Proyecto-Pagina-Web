@@ -12,7 +12,7 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
   declarations: [
     AppComponent,
     ServiciosComponent,
-    FooterComponent
+    FooterComponent,
     AppComponent,
     BienvenidaComponent
   ],
