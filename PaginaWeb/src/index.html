@@ -9,36 +9,59 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./assets/navbar/style.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <nav class="navbar navbar-custom-01 navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Inicio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Servicios <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Paquetes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            Tel+ 3112384577
-          </span>
+  <nav class="nav">
+        <div class="logo">
+            <a class="text-nav"  href="#"><img style="width: 53px; padding: 9px;" src="./assets/navbar/logo_leon.png">AzuraMex</a>
         </div>
-      </nav>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a class="text-nav" href="#">About</a></li>
+                <li><a class="text-nav" href="#">Portfolio</a></li>
+                <li><a class="text-nav" href="#">Services</a></li>
+                <li><a class="text-nav" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+</nav>
+      
   <app-root></app-root>
   <script type="text/javascript">
     var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
     {widgetcode:"467afab92f747c8f33d1136742b8e3a6afa8929883a40fa37fee56f92de8963c", values:{},ready:function(){}};
     var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
     s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+    </script>
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./assets/navbar/scripts-nav.js"></script>
+
+<script> 
+
+   
+    
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+
+            
+
+              $('.nav').addClass('affix');
+              console.log("OK");
+              $('.text-nav').css("color","#ffffff9c")
+          } else {
+              $('.nav').removeClass('affix');
+              $('.text-nav').css("color","#0000008f")
+          }
+      });
     </script>
 </body>
 </html>
