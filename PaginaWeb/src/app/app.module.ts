@@ -7,6 +7,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { GarantiasComponent } from './garantias/garantias.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
     ServiciosComponent,
     FooterComponent,
     AppComponent,
-    BienvenidaComponent
+    BienvenidaComponent,
+    GarantiasComponent
   ],
   imports: [
     BrowserModule,
