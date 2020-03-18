@@ -7,6 +7,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { GarantiasComponent } from './garantias/garantias.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { OfertaPaquetesComponent } from './oferta-paquetes/oferta-paquetes.component';
 
@@ -16,6 +17,8 @@ import { OfertaPaquetesComponent } from './oferta-paquetes/oferta-paquetes.compo
     ServiciosComponent,
     FooterComponent,
     AppComponent,
+    BienvenidaComponent,
+    GarantiasComponent
     BienvenidaComponent,
     ContactoComponent,
     OfertaPaquetesComponent
